@@ -25,7 +25,6 @@ const insertAtStart = (head, value) => {
 }
  */
 
-
 const head = insertAtStart(null, "D");
 // traversal(head)
 const nhead = insertAtStart(head, "C");
