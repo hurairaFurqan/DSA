@@ -31,6 +31,18 @@ const insertionAtPosition = (head, value, position) => {
     temp.next = current;
 } */
 
+/* Recursive Method;
+const insertionAtPosition = (head, value, position) => {
+
+    if (position === 1) {
+        let n = new node(value);
+        n.next = head.next;
+        head.next = n;
+        return;
+    }
+    return insertionAtPosition(head.next, value, position - 1);
+} */
+
 const traversal = (head) => {
     if (head === null) return
     console.log(head.value);
@@ -39,7 +51,7 @@ const traversal = (head) => {
 
 // traversal(a)
 
-insertionAtPosition(a, "E", 2)
+insertionAtPosition(a, "E", 4)
 
 
 
