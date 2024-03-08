@@ -20,7 +20,7 @@ d.next = e;
 e.next = f;
 
 
-/* Iterative Method
+// Iterative Method
 const swapTwoNodes = (head, pos1, pos2) => {
     let count = 1;
     let node1 = head;
@@ -38,16 +38,16 @@ const swapTwoNodes = (head, pos1, pos2) => {
     node1.value = node2.value;
     node2.value = swapVar;
     return head;
-} */
+}
 
-const swapTwoNodes = (head, pos1, pos2, node1 = head, node2 = head) => {
+/* const swapTwoNodes = (head, pos1, pos2, node1 = head, node2 = head) => {
     if (pos1 === 1) {
         
     }
     if (pos2 === 1) {
         
     }
-}
+} */
 
 
 const traversal = (head) => {
@@ -56,5 +56,5 @@ const traversal = (head) => {
     return traversal(head.next)
 }
 
-const head = swapTwoNodes(a, 3, 5);
+const head = swapTwoNodes(a, 3, 4);
 traversal(head);
